@@ -4,4 +4,4 @@ Features: Search by location, display of today's weather and detailed parameters
 Tech stack: React, ContextAPI, SCSS. <br>
 API's: [Open Meteo API ](https://open-meteo.com/)
 
-[DEMO](#)
+[DEMO](https://franchukv.github.io/weather-app-react/)
