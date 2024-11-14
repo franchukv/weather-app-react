@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+body {
+  font-family: $nunito;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: $gray100;
+  background: $gray900;
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+a {
+  transition: $transition;
+
+  &:hover {
+    text-decoration-color: transparent;
+  }
+}
+
+button {
+  font-family: inherit;
+  transition: $transition;
+  cursor: pointer;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i {
+  font-style: italic;
+}
+
+mark {
+  color: $blueLight;
+  background: transparent;
+}

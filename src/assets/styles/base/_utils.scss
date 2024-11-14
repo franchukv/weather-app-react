@@ -1,0 +1,18 @@
+.container {
+  max-width: calc(1320px + 48px);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (max-width: 1200px) {
+    padding: 0 16px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 0 8px;
+  }
+}
+
+.scroll-lock {
+  overflow: hidden;
+}

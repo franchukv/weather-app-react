@@ -1,0 +1,94 @@
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    padding: 16px 0;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+
+    & + .details__item {
+      border-top: 1px solid $gray700;
+    }
+
+    &::before {
+      content: '';
+      min-width: 32px;
+      width: 32px;
+      height: 32px;
+      display: block;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    &--temperature {
+      &::before {
+        background-image: url(../../images/svg/details-icons/temperature.svg);
+      }
+    }
+
+    &--rain {
+      &::before {
+        background-image: url(../../images/svg/details-icons/rain.svg);
+      }
+    }
+
+    &--wind {
+      &::before {
+        background-image: url(../../images/svg/details-icons/wind.svg);
+      }
+    }
+
+    &--humidity {
+      &::before {
+        background-image: url(../../images/svg/details-icons/humidity.svg);
+      }
+    }
+
+    &--sun {
+      &::before {
+        background-image: url(../../images/svg/details-icons/sun.svg);
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: $gray200;
+  }
+
+  &__value {
+    margin-left: auto;
+    font-weight: 700;
+  }
+
+  @media (max-width: 640px) {
+    &__item {
+      padding: 18px 0;
+
+      &::before {
+        min-width: 28px;
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    &__item {
+      &::before {
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__value {
+      font-size: 16px;
+    }
+  }
+}

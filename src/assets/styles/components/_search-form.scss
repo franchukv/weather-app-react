@@ -1,0 +1,143 @@
+.search-form {
+  width: 100%;
+  height: 56px;
+  position: relative;
+
+  &__input {
+    width: 100%;
+    height: 56px;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-family: $nunito;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    color: $gray100;
+    background: $gray600;
+    outline: 2px solid transparent;
+    transition: $transition;
+
+    &::placeholder {
+      color: $gray400;
+    }
+
+    &:focus {
+      outline-color: $blueLight;
+    }
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      -webkit-appearance: none;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    max-height: 240px;
+    height: fit-content;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    overflow: auto;
+    border-radius: 8px;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $gray100;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $gray300;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $gray400;
+    }
+  }
+
+  &__item {
+    padding: 16px 20px;
+    font-size: 16px;
+    background: $gray500;
+    transition: $transition;
+    outline: 0;
+
+    &:not(.disabled):not(.selected) {
+      cursor: pointer;
+
+      &:hover {
+        background: darken($gray500, 5%);
+      }
+
+      &:focus {
+        background: darken($gray500, 10%);
+      }
+    }
+
+    &.selected {
+      font-weight: 700;
+      color: $blueLight;
+      background: darken($gray500, 2.5%);
+      pointer-events: none;
+    }
+
+    & + .search-form__item {
+      border-top: 1px solid $gray600;
+    }
+  }
+
+  &__list {
+    &:not(.open) {
+      display: none;
+    }
+  }
+
+  &.loading {
+    &::after {
+      content: '';
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../../images/svg/spinner.svg);
+      background-repeat: no-repeat;
+      background-size: 26px 26px;
+      background-position: center;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__input,
+    &__item {
+      font-size: 14px;
+    }
+  }
+}
+
+.dashboard {
+  &.active {
+    .search-form {
+      @media (max-width: 1200px) {
+        &__list {
+          width: calc(100dvw - 64px);
+          left: calc(50% - 34px);
+          transform: translateX(-50%);
+        }
+      }
+
+      @media (max-width: 640px) {
+        &__list {
+          width: calc(100dvw - 40px);
+          left: calc(50% - 32px);
+        }
+      }
+    }
+  }
+}
