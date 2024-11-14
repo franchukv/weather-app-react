@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/weather-app-react/static/css/main.fc51b9ca.css",
+    "main.js": "/weather-app-react/static/js/main.1d00ba63.js",
+    "static/media/weather=snow&moment=night.svg": "/weather-app-react/static/media/weather=snow&moment=night.a2180c0369676e71d7fe.svg",
+    "static/media/weather=snow&moment=day.svg": "/weather-app-react/static/media/weather=snow&moment=day.0aba86de81613463d0f0.svg",
+    "static/media/weather=cloudy&moment=day.svg": "/weather-app-react/static/media/weather=cloudy&moment=day.4b7d1b7fd0e11cbecf9f.svg",
+    "static/media/weather=few-clouds&moment=day.svg": "/weather-app-react/static/media/weather=few-clouds&moment=day.6369f0371fa63c3565a5.svg",
+    "static/media/weather=rain&moment=day.svg": "/weather-app-react/static/media/weather=rain&moment=day.5ef9be2fe69c6bec7a30.svg",
+    "static/media/weather=storm&moment=day.svg": "/weather-app-react/static/media/weather=storm&moment=day.db5401e5b9499055b309.svg",
+    "static/media/weather=rain&moment=night.svg": "/weather-app-react/static/media/weather=rain&moment=night.30a6046075db6272cc40.svg",
+    "static/media/weather=few-clouds&moment=night.svg": "/weather-app-react/static/media/weather=few-clouds&moment=night.4a1755f3b5f041162388.svg",
+    "static/media/weather=cloudy&moment=night.svg": "/weather-app-react/static/media/weather=cloudy&moment=night.5e6d7dfeeb00a9fd6be2.svg",
+    "static/media/weather=clear&moment=day.svg": "/weather-app-react/static/media/weather=clear&moment=day.5c65afefe9877a498e42.svg",
+    "static/media/weather=clear&moment=night.svg": "/weather-app-react/static/media/weather=clear&moment=night.8160a2fe46bd1ef4a2e4.svg",
+    "static/media/weather=storm&moment=night.svg": "/weather-app-react/static/media/weather=storm&moment=night.a6ce19f727b4fc3892bb.svg",
+    "static/media/bg.svg": "/weather-app-react/static/media/bg.4d174760da4464e77bd9.svg",
+    "static/media/sun.svg": "/weather-app-react/static/media/sun.549e7271c79c798d7488.svg",
+    "static/media/wind.svg": "/weather-app-react/static/media/wind.6ee89da05a2fb9a26e23.svg",
+    "static/media/rain.svg": "/weather-app-react/static/media/rain.732be9119978eee855c8.svg",
+    "static/media/temperature.svg": "/weather-app-react/static/media/temperature.e7c52a1669e8cf7fabe2.svg",
+    "static/media/humidity.svg": "/weather-app-react/static/media/humidity.1de5ad1773254ef8e034.svg",
+    "static/media/logo.svg": "/weather-app-react/static/media/logo.a015105ec7862d48616a5a32b834576f.svg",
+    "static/media/spinner.svg": "/weather-app-react/static/media/spinner.65eb678c5168e7022a23.svg",
+    "index.html": "/weather-app-react/index.html",
+    "main.fc51b9ca.css.map": "/weather-app-react/static/css/main.fc51b9ca.css.map",
+    "main.1d00ba63.js.map": "/weather-app-react/static/js/main.1d00ba63.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc51b9ca.css",
+    "static/js/main.1d00ba63.js"
+  ]
+}
